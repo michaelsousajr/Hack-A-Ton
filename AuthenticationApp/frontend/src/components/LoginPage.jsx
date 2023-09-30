@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+
+  const navigate = useNavigate();
 
   const validateForm = () => {
     if (!email || !password) {
@@ -31,7 +34,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container-lg mt-5">
+    <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card custom-card">

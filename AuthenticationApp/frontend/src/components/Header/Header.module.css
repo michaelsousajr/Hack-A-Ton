@@ -1,0 +1,65 @@
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-right: auto;
+    margin-left: 10%;
+    text-decoration: none;
+}
+
+.navlist {
+    display: flex;
+    transition: max-height 0.3s ease;
+    max-height: 0;  /* Initially hide the menu on small screens */
+    overflow: hidden; /* This ensures menu doesn't show even if max-height isn't enough */
+    list-style: none;  /* Remove list dots */
+}
+
+.navlist.open {
+    max-height: 500px;  /* Adjust this value based on how many menu items you'll have */
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.55s ease;
+    text-decoration: none;  /* Remove underline */
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 30px;
+    z-index: 9999999;
+    cursor: pointer;
+}
+
+/* Breakpoint for larger screens where we want to display the menu by default */
+@media screen and (min-width: 768px) {
+    .navlist {
+        max-height: none;
+        display: flex;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+}

@@ -1,31 +1,57 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../images/logo.webp'
+import '../styles/HomePage.css';
+import { useNavigate } from 'react-router-dom';
+import Header from './Header/Header';
+import Hero from './Hero/Hero';
+import SocialIcons from './SocialIcons/SocialIcons';
+import ScrollDown from './ScrollDown/ScrollDown';
 
-function HomePage() {
-  return (
-    <div className="container mt-5">
-      <div className="jumbotron text-center">
-        <h1 className="display-4">Welcome to Cybersecurity Hub</h1>
-        <p className="lead">
-          Explore the world of cybersecurity and dive deep into the essentials of cybersecurity.
-        </p>
-        <hr className="my-4" />
-        <div className="d-flex justify-content-center">
-          <Link to="/login" className="btn btn-secondary btn-lg mx-3">
-            Click here to login
-          </Link>
+function App() {
+    /**
+     * Fetches a greeting message related to Open Source learning.
+     *
+     * In essence, when you click the "Learn OpenSource" button in your React app,
+     * this function fetches the greeting message from the Spring Boot backend
+     * and then displays that greeting message in a popup alert in the browser.
+     */
+    const fetchOpenSource = () => {
+        fetch("/api/v1/learn-opensource")       // Makes an HTTP GET request to "/api/v1/learn-opensource"
+            .then(response => response.text())    // Once the response is received, extracts the text from the response.
+            .then(data => {
+                alert(data);                        // Displays an alert with the extracted text data.
+            });
+    }
 
-          <Link to="/signup" className="btn btn-secondary btn-lg mx-3">
-            Click here to signup
-          </Link>
+    /**
+     * Fetches a greeting message related to Cybersecurity learning.
+     *
+     * In essence, when you click the "Learn Cybersecurity" button in your React app,
+     * this function fetches the greeting message from the Spring Boot backend
+     * and then displays that greeting message in a popup alert in the browser.
+     */
+    const fetchCybersecurity = () => {
+        fetch("/api/v1/learn-cybersecurity")    // Makes an HTTP GET request to "/api/v1/learn-cybersecurity"
+            .then(response => response.text())    // Once the response is received, extracts the text from the response.
+            .then(data => {
+                alert(data);                        // Displays an alert with the extracted text data.
+            });
+    }
+
+
+
+    return (
+        <div className="container">
+            <div className="header">
+                <h1>Welcome to OpenSource & Cybersecurity Hub</h1>
+                <p>Explore the world of open-source software and dive deep into the essentials of cybersecurity.</p>
+            </div>
+            <div className="content">
+                <button className="button" onClick={() => alert("Welcome to OpenSource!")}>Learn OpenSource</button>
+                <button className="button" onClick={() => alert("Welcome to Cybersecurity!")}>Learn Cybersecurity</button>
+            </div>
         </div>
-      </div>
-      <div className="jumbotron text-center mt-5">
-        <img src={logo} class="img-fluid rounded" alt="..."></img>
-      </div>
-    </div>
-  );
-}
+    );
+};
 
-export default HomePage;
+export default App;
+
