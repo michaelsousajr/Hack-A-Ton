@@ -1,0 +1,19 @@
+.scrollDown {
+    position: absolute;
+    bottom: 6%;
+    right:9%;
+}
+
+.icon {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #6082B6;
+    border-radius: 30px;
+    transition: all 0.50s ease;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+}

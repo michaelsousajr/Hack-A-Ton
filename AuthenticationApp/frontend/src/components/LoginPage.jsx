@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
@@ -8,6 +10,8 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+
+  const navigate = useNavigate();
 
   const validateForm = () => {
     if (!email || !password) {
@@ -71,6 +75,8 @@ const Login = () => {
         >
           Login
         </Button>
+        <button onClick={() => navigate('/')}>Home</button>
+
       </form>
     </Container>
   );
