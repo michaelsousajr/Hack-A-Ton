@@ -31,9 +31,9 @@ const Login = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container-lg mt-5">
       <div className="row justify-content-center">
-        <div className="col-md">
+        <div className="col-md-6">
           <div className="card custom-card">
             <div className="card-header custom-header">
               <h2 className="mb-0">Login</h2>
