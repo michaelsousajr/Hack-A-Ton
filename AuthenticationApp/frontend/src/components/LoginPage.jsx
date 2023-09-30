@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
-
 import { useNavigate } from 'react-router-dom';
-
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-
 import '../styles/Login.css'; 
+import login_bg from '../images/login_bg.jpg';
 
 
 const Login = () => {
@@ -42,101 +36,54 @@ const Login = () => {
   };
 
   return (
-
-    <>
-      <Container component="main" maxWidth="xs">
-        <Typography component="h1" variant="h5">
-          Login
-        </Typography>
-        {error && <Typography color="error">{error}</Typography>}
-        <form onSubmit={handleSubmit}>
-          <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-          />
-          <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-          />
-          <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-          >
-            Login
-          </Button>
-          <button onClick={() => navigate('/')}>Home</button>
-
-        </form>
-      </Container>
-
-      <div className="container mt-5">
-        <div className="row justify-content-center">
-          <div className="col-md">
-            <div className="card custom-card">
-              <div className="card-header custom-header">
-                <h2 className="mb-0">Login</h2>
-              </div>
-              <div className="card-body">
-                {error && (
-                    <div className="alert alert-danger" role="alert">
-                      {error}
+    <section class="h-100 gradient-form" style={{ background: '#eee' }}>
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black mb-5">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+                  <div class="text-center">
+                    <img src={login_bg} style={{ width: '200px' }} alt="logo" />
+                    <h4 class="mt-1 mb-5 pb-1">Welcome To The Login Page</h4>
+                  </div>
+                  <form>  
+                    <div class="form-outline mb-3">
+                      <input type="email" id="form1" class="form-control"
+                        placeholder="Phone number or email address" />
+                      <label class="form-label" for="form1">Username</label>
                     </div>
-                )}
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-3">
-                    <label htmlFor="email" className="form-label custom-label">
-                      Email Address
-                    </label>
-                    <input
-                        type="email"
-                        className="form-control custom-input"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="password" className="form-label custom-label">
-                      Password
-                    </label>
-                    <input
-                        type="password"
-                        className="form-control custom-input"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                  </div>
-                  <button type="submit" className="btn custom-btn btn-block">
-                    Login
-                  </button>
-                </form>
+                    <div class="form-outline mb-3">
+                      <input type="password" id="form2" class="form-control" />
+                      <label class="form-label" for="form2">Password</label>
+                    </div>
+  
+                    <div class="text-center pt-1 mb-5 pb-1">
+                      <button class="btn btn-secondary btn-block fa-lg gradient-1 mb-3 mx-3" type="button">Login</button>
+                      <a class="text-muted" href="#!">Forgot password?</a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                      <p class="mb-0 me-2">Don't have an account?</p>
+                      <button type="button" class="btn btn-outline-secondary">Create new account</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-1">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h4 class="mb-4">Why Learn Cybersecurity now</h4>
+                  <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
+  </section>
   );
-};
-
+}
 export default Login;
