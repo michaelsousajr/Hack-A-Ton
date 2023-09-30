@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/Login.css'; 
 import login_bg from '../images/login_bg.jpg';
 
@@ -33,6 +34,9 @@ const Login = () => {
     //API calling logic here.
     console.log('Email:', email);
     console.log('Password:', password);
+
+    navigate('/');
+
   };
 
   return (
@@ -61,11 +65,11 @@ const Login = () => {
   
                     <div class="text-center pt-1 mb-5 pb-1">
                       <button class="btn btn-secondary btn-block fa-lg gradient-1 mb-3 mx-3" type="button">Login</button>
-                      <a class="text-muted" href="#!">Forgot password?</a>
+                      <Link to="/signup"><a class="text-muted">Forgot password?</a></Link>
                     </div>
                     <div class="d-flex align-items-center justify-content-center pb-4">
                       <p class="mb-0 me-2">Don't have an account?</p>
-                      <button type="button" class="btn btn-outline-secondary">Create new account</button>
+                      <Link to="/signup"><button type="button" class="btn btn-outline-secondary">Create new account</button></Link>
                     </div>
                   </form>
                 </div>
