@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
 
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+=======
+import '../styles/Login.css'; 
+>>>>>>> a5c729490480c0580da4026a00d4d745884f4149
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -32,12 +36,13 @@ const Login = () => {
       return;
     }
 
-    // You can put your API calling logic here.
+    //API calling logic here.
     console.log('Email:', email);
     console.log('Password:', password);
   };
 
   return (
+<<<<<<< HEAD
     <Container component="main" maxWidth="xs">
       <Typography component="h1" variant="h5">
         Login
@@ -79,6 +84,57 @@ const Login = () => {
 
       </form>
     </Container>
+=======
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md">
+          <div className="card custom-card">
+            <div className="card-header custom-header">
+              <h2 className="mb-0">Login</h2>
+            </div>
+            <div className="card-body">
+              {error && (
+                <div className="alert alert-danger" role="alert">
+                  {error}
+                </div>
+              )}
+              <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label custom-label">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control custom-input"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="password" className="form-label custom-label">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    className="form-control custom-input"
+                    id="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </div>
+                <button type="submit" className="btn custom-btn btn-block">
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+>>>>>>> a5c729490480c0580da4026a00d4d745884f4149
   );
 };
 
