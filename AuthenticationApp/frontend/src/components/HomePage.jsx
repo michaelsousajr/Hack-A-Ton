@@ -31,8 +31,8 @@ function HomePage() {
             <Hero />
 
             <div className="content-section">
-                <h1>Welcome to OpenSource & Cybersecurity Hub</h1>
-                <p>Explore the world of open-source software and dive deep into the essentials of cybersecurity.</p>
+                <h1>🧑‍💻Welcome to OpenSource & Cybersecurity Hub</h1>
+                <p>Explore the world of open-source software and dive deep into the essentials of cybersecurity.🔎💻🌍</p>
 
                 <div className="buttons">
                     <button className="button" onClick={fetchOpenSource}>Learn OpenSource</button>
