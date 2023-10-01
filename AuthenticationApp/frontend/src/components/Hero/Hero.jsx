@@ -12,8 +12,8 @@ function Hero() {
         <section className={styles.hero}>
             <div className={styles['hero-text']}>
                 <h5>MLH - Hackfest</h5>
-                <h4>Cybersecurity Learning</h4>
-                <h1>Learning Hack</h1>
+                <h4>Learn Cybersecurity</h4>
+                <h1>Learn How To Hack</h1>
                 <p>🔐 Dive into the world of ethical hacking through hands-on experiences | Explore insightful content in cybersecurity | Unleash your hacking skills responsibly and learn from the best 💻🌐 | #HackingJourney</p>
                 <a href="#">Our CyberSecurity Blog</a>
                 <a href="#" className={styles.ctaa}>
