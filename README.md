@@ -5,16 +5,13 @@ Hack-a-Ton is an open-source platform crafted to bridge the gap between
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Credits](#credits)
 
 ## Features
 
 - **Interactive Modules**: Dive deep into the world of ethical hacking with hands-on modules.
 - **Collaborative Platform**: Join forces with fellow hackers and tackle real-world cyber challenges.
-- **Badge System**: Showcase your progress and achievements with our badge system.
 
 ## Installation
 
@@ -26,3 +23,14 @@ Hack-a-Ton is an open-source platform crafted to bridge the gap between
 3. npm install
 
 4. npm start
+
+## Contributing
+
+Fork the project.
+Create your feature branch (git checkout -b feature/AmazingFeature).
+Commit your changes (git commit -m 'Add some AmazingFeature').
+Push to the branch (git push origin feature/AmazingFeature).
+Open a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE.md file for details.
