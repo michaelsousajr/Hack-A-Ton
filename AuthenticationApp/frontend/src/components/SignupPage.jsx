@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/Login.css';
 import login_bg from '../images/login_bg.jpg';
 
@@ -90,10 +91,11 @@ const Signup = () => {
                         </label>
                       </div>
 
-                      <div className="text-center pt-1 mb-5 pb-1">
+                      <div className="text-center pt-1 mb-4">
                         <button className="btn btn-secondary btn-block fa-lg gradient-1 mb-3 mx-3" type="button" onClick={handleSubmit}>
                           Sign Up
                         </button>
+                        <p>Already have an account? <Link to="/login"><a class="text-muted">Login</a></Link> </p>
                       </div>
                     </form>
                   </div>
