@@ -72,7 +72,8 @@ section {
 .hero-text a.ctaa {
     background: transparent;
     border: 1px solid white;
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
 }
 
 .hero-text a.ctaa i {

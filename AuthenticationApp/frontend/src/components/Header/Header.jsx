@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <header className={styles.header}>
-            <a href="#" className={styles.logo}>MLH Hackaton</a>
+            <a href="#" className={styles.logo}>MLH Hackathon</a>
             <ul className={`${styles.navlist} ${menuOpen ? styles.open : ""}`}>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
