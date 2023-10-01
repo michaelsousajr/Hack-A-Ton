@@ -18,29 +18,29 @@ section {
     font-size: 14px;
     font-weight: 400;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .hero-text h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 90px;
+    font-size: 80px;
     line-height: 1;
     color: white;
-    margin: 0 0 45px;
+    margin: 0 0 38px;
 }
 
 .hero-text h4 {
     font-size: 18px;
     font-weight: 600;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .hero-text p {
     color: white;
-    font-size: 15px;
-    line-height: 1.9;
-    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 2.0;
+    margin-bottom: 10px;
 }
 
 .hero-img img {
@@ -72,10 +72,10 @@ section {
 .hero-text a.ctaa {
     background: transparent;
     border: 1px solid white;
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
 }
 
 .hero-text a.ctaa i {
     vertical-align: middle;
-    margin-right: 5px;
 }
