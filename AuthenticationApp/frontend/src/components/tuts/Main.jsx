@@ -59,16 +59,16 @@ function Main(){
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Videos</a>
+                                <Link to="/"><a class="nav-link">Home</a></Link>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbnklGh3FNRLECx_2D_vK3mu">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <Link to="/news"><a class="nav-link">News</a></Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Articles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
                             </li>
                         </ul>
                     </div>

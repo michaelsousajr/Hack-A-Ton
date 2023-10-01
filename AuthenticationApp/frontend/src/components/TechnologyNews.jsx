@@ -17,8 +17,9 @@ const TechnologyNews = () => {
   }, []);
 
   return (
-    <div className="container mt-2">
-      <h2>Technology News</h2>
+    <div className="container mt-2" style={{background: '#eee'}}>
+      <p className='display-5'>Technology News</p>
+      <div className='line'></div>
       <div className="row mt-5">
         {news.map((article) => (
           <div className="col-md-4 mb-2" key={article.title}>
