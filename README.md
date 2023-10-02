@@ -1,7 +1,8 @@
+<img src="https://i.imgur.com/RILqH7p.png" alt="MLH-banner" width="100%" height="150px">
 # Hack-a-Ton
 
 Hack-a-Ton is an open-source platform crafted to bridge the gap between 
-
+https://i.imgur.com/huGkS0B.jpeg
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
@@ -23,6 +24,9 @@ Hack-a-Ton is an open-source platform crafted to bridge the gap between
 3. npm install
 
 4. npm start
+
+## Snapshots
+<img src="https://i.imgur.com/huGkS0B.jpeg" alt="website-preview" width="100%" height="450px">
 
 ## Contributing
 
